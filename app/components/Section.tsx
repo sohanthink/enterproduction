@@ -21,7 +21,7 @@ export default function Section({
       id={id}
       className={`${bgStyles} py-20 md:py-32 px-4 md:px-6 ${className}`}
     >
-      <div className="max-w-7xl mx-auto">{children}</div>
+      <div className="w-[85%] mx-auto">{children}</div>
     </section>
   );
 }

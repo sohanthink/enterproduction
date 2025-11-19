@@ -83,7 +83,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4">
             Our Services
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#FF6B35] to-transparent mx-auto mb-6" />
+          <div className="w-24 h-1 bg-linear-to-r from-transparent via-[#FF6B35] to-transparent mx-auto mb-6" />
           <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Comprehensive digital solutions tailored to your business needs
           </p>

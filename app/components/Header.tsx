@@ -22,7 +22,7 @@ export default function Header() {
         isScrolled ? "bg-black/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
+      <nav className="w-[85%] mx-auto px-4 md:px-6 py-4 md:py-6">
         <div className="flex items-center justify-between">
           <div className="text-2xl md:text-3xl font-bold">
             <Image src={logo} alt="Logo" width={200} height={100} />
