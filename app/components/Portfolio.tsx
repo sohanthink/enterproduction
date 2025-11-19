@@ -13,7 +13,7 @@ const projects = [
     category: "Development",
     description:
       "Modern e-commerce solution with seamless user experience and advanced features",
-    image: "/images/portfolio/ecommerce.jpg", // Replace with your actual image path
+    image: "", // Replace with your actual image path
     results: "300% increase in conversions",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     category: "Design",
     description:
       "Complete brand transformation with stunning visual identity and guidelines",
-    image: "/images/portfolio/branding.jpg", // Replace with your actual image path
+    image: "", // Replace with your actual image path
     results: "Brand recognition up 250%",
   },
   {
@@ -31,7 +31,8 @@ const projects = [
     category: "Marketing",
     description:
       "Viral social media campaign that increased engagement and brand awareness",
-    image: "/images/portfolio/social.jpg", // Replace with your actual image path
+    image:
+      "https://enterproductions.ca/wp-content/uploads/2025/05/MrZagros_September_Creative_03-1-1536x1536.webp", // Replace with your actual image path
     results: "300% engagement increase",
   },
   {
@@ -40,7 +41,8 @@ const projects = [
     category: "Development",
     description:
       "Enterprise-level website with advanced functionality and seamless integration",
-    image: "/images/portfolio/corporate.jpg", // Replace with your actual image path
+    image:
+      "https://enterproductions.ca/wp-content/uploads/2025/05/MrZagros_Oct_Creative_06-2-1536x1536.webp", // Replace with your actual image path
     results: "50% faster load times",
   },
   {
@@ -49,7 +51,8 @@ const projects = [
     category: "Design",
     description:
       "Stunning portfolio website showcasing creative work with immersive experience",
-    image: "/images/portfolio/creative.jpg", // Replace with your actual image path
+    image:
+      "https://enterproductions.ca/wp-content/uploads/2025/05/Veggie_Planet_Jan_01-3-1536x1536.webp", // Replace with your actual image path
     results: "Award-winning design",
   },
   {
@@ -58,7 +61,7 @@ const projects = [
     category: "Marketing",
     description:
       "Comprehensive marketing strategy driving measurable growth and ROI",
-    image: "/images/portfolio/marketing.jpg", // Replace with your actual image path
+    image: "", // Replace with your actual image path
     results: "250% ROI increase",
   },
 ];
@@ -132,24 +135,26 @@ export default function Portfolio() {
             <ScrollAnimation key={project.id} delay={index * 100}>
               <div className="group relative h-full overflow-hidden rounded-2xl bg-gray-900 cursor-pointer transform hover:-translate-y-2 transition-all duration-500">
                 {/* Image Container */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
+                <div className="relative aspect-square overflow-hidden bg-linear-to-br from-gray-800 to-gray-900">
                   {/* Placeholder for image - replace with Next.js Image when you have images */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl opacity-20">📷</div>
-                  </div>
-
-                  {/* When you have images, uncomment and use this: */}
-                  {/* <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  /> */}
+                  {project?.image == "" ? (
+                    <>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-6xl opacity-20">📷</div>
+                      </div>
+                    </>
+                  ) : (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  )}
 
                   {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
+                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   {/* Orange accent on hover */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-[#FF6B35] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
