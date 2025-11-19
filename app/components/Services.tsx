@@ -10,6 +10,7 @@ import {
   FaPalette,
   FaShareAlt,
   FaChartLine,
+  FaCameraRetro,
 } from "react-icons/fa";
 
 const services = [
@@ -47,6 +48,13 @@ const services = [
       "Data-driven marketing strategies that drive traffic, leads, and conversions.",
     Icon: FaChartLine,
     gradient: "from-orange-500/10 to-red-500/10",
+  },
+  {
+    title: "Photography Services",
+    description:
+      "Editorial-grade photography, art direction, and visual storytelling that capture your brand's essence.",
+    Icon: FaCameraRetro,
+    gradient: "from-amber-500/10 to-yellow-500/10",
   },
 ];
 
