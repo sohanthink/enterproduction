@@ -73,6 +73,10 @@ h6 {
   font-weight: 700;
   letter-spacing: 0.02em;
 }
+h1,
+h2 {
+  text-transform: uppercase;
+}
 
 /* Animation utilities */
 @keyframes fadeInUp {
@@ -96,7 +100,8 @@ h6 {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px);
   }
   33% {
@@ -108,7 +113,8 @@ h6 {
 }
 
 @keyframes floatReverse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px);
   }
   33% {
@@ -120,7 +126,8 @@ h6 {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -129,7 +136,8 @@ h6 {
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(1);
   }

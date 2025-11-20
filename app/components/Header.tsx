@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-100 transition-all duration-300 ${
           isScrolled || isMobileMenuOpen
             ? "bg-black backdrop-blur-md shadow-xl"
             : "bg-transparent"
@@ -81,7 +81,7 @@ export default function Header() {
               </Button>
             </div>
             <button
-              className="md:hidden text-white relative z-[101] p-2"
+              className="md:hidden text-white relative z-101 p-2"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
