@@ -1,20 +1,18 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import logo from "@/public/images/logo.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-black text-white py-12 px-4 md:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="w-90% md:w-[85%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <div>
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-white">enter</span>
-              <span className="text-[#FF6B35]">production</span>
-            </div>
+            <Image src={logo} alt="Logo" width={200} height={100} />
             <p className="text-gray-400 mb-4">
               High-end digital solutions for forward-thinking brands.
             </p>
